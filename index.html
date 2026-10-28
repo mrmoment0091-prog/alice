@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melanin Alice — Exclusive Content</title>
-    <!-- Подключаем международные шрифты и иконки соцсетей -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+    <!-- Подключаем только модный журнальный шрифт для текста -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
     
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
+            font-family: 'Plus Jakarta Sans', Arial, sans-serif; 
             background: #0d0104; 
             min-height: 100vh;
             display: flex;
@@ -78,19 +78,21 @@
             color: #ff3366;
             transform: translateY(-3px);
             text-shadow: 0 0 15px rgba(255, 51, 102, 0.8);
-       .warning-text {
+        }
+
+        /* ТОТ САМЫЙ МОДНЫЙ ЖУРНАЛЬНЫЙ ТЕКСТ НАД КНОПКОЙ */
+        .warning-text {
             font-family: 'Playfair Display', serif;
             font-style: italic;
             color: #f8fafc;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            margin: 0 auto 20px auto;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            margin: 0 auto 25px auto;
             max-width: 85%;
             line-height: 1.5;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
-
 
         .vip-button-container {
             position: relative;
@@ -120,7 +122,6 @@
             background-image: url('butt.jpg'); 
             background-size: cover;
             background-position: center 30%; 
-            /* transform: scaleX(-1) разворачивает фотку по горизонтали */
             transform: scaleX(-1); 
             filter: brightness(0.35) contrast(1.15); 
             transition: all 0.4s ease;
@@ -134,8 +135,10 @@
             z-index: 2;
         }
 
+        /* КНОПКА ОСТАЕТСЯ С РОДНЫМ КРУТЫМ ШРИФТОМ */
         .btn-text {
             position: relative;
+            font-family: 'Plus Jakarta Sans', Arial, sans-serif;
             color: #ffffff;
             font-size: 19px;
             font-weight: 700;
@@ -169,18 +172,18 @@
             <img src="avatar.jpg" alt="Melanin Alice" class="main-photo">
         </div>
 
-        <!-- Значки соцсетей (пока ведут наверх страницы) -->
+        <!-- Значки соцсетей -->
         <div class="social-icons">
             <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
         </div>
 
-        <!-- Предупреждающий английский текст -->
+        <!-- Предупреждающий английский текст с новым шрифтом -->
         <p class="warning-text">"Honestly, I wouldn't press the button. It's highly addictive."</p>
 
-        <!-- Пульсирующая VIP-кнопка с вашей ссылкой на Boosty -->
+        <!-- Пульсирующая VIP-кнопка -->
         <div class="vip-button-container">
-            <a href="https://boosty.to/ebonyface" class="vip-btn" target="_blank">
+            <a href="https://boosty.to" class="vip-btn" target="_blank">
                 <div class="btn-bg"></div>
                 <div class="btn-overlay"></div>
                 <span class="btn-text">GET WHAT YOU WANT</span>
