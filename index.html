@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanin Alice — Exclusive Content</title>
+    <!-- Подключаем международные шрифты и иконки соцсетей -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #0d0104; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: linear-gradient(180deg, #2d040f 0%, #4a0516 40%, #1a0107 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 50px rgba(74, 5, 22, 0.4);
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            overflow: hidden;
+        }
+
+        .main-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            box-shadow: inset 0 -60px 50px #2d040f, 
+                        inset 0 30px 30px rgba(13, 1, 4, 0.8),
+                        inset 25px 0 25px rgba(13, 1, 4, 0.5),
+                        inset -25px 0 25px rgba(13, 1, 4, 0.5);
+            pointer-events: none;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            margin: 35px 0;
+        }
+
+        .social-icons a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 26px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff3366;
+            transform: translateY(-3px);
+            text-shadow: 0 0 15px rgba(255, 51, 102, 0.8);
+        }
+
+        .warning-text {
+            color: #f8fafc;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin: 0 auto 20px auto;
+            max-width: 85%;
+            line-height: 1.5;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .vip-button-container {
+            position: relative;
+            width: 88%;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .vip-btn {
+            display: block;
+            position: relative;
+            width: 100%;
+            padding: 35px 20px; 
+            text-decoration: none;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            animation: buttonPulse 2.5s infinite ease-in-out;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('butt.jpg'); 
+            background-size: cover;
+            background-position: center 30%; 
+            /* transform: scaleX(-1) разворачивает фотку по горизонтали */
+            transform: scaleX(-1); 
+            filter: brightness(0.35) contrast(1.15); 
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+
+        .btn-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(74, 5, 22, 0.5) 100%);
+            z-index: 2;
+        }
+
+        .btn-text {
+            position: relative;
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            z-index: 3;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        @keyframes buttonPulse {
+            0% { transform: scale(1.0); }
+            50% { transform: scale(1.04); }
+            100% { transform: scale(1.0); }
+        }
+
+        .vip-btn:hover {
+            animation-play-state: paused; 
+        }
+
+        .vip-btn:hover .btn-bg {
+            filter: brightness(0.5) contrast(1.2);
+            transform: scaleX(-1) scale(1.08); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Блок главного портретного фото -->
+        <div class="image-wrapper">
+            <img src="avatar.jpg" alt="Melanin Alice" class="main-photo">
+        </div>
+
+        <!-- Значки соцсетей (пока ведут наверх страницы) -->
+        <div class="social-icons">
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        </div>
+
+        <!-- Предупреждающий английский текст -->
+        <p class="warning-text">"Honestly, I wouldn't press the button. It's highly addictive."</p>
+
+        <!-- Пульсирующая VIP-кнопка с вашей ссылкой на Boosty -->
+        <div class="vip-button-container">
+            <a href="https://boosty.to/ebonyface" class="vip-btn" target="_blank">
+                <div class="btn-bg"></div>
+                <div class="btn-overlay"></div>
+                <span class="btn-text">GET WHAT YOU WANT</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
